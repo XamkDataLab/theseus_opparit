@@ -10,7 +10,7 @@ from queries import *
 color_discrete_sequence=px.colors.sequential.Viridis
 st.set_page_config(layout="wide")
 sns.set_theme(style='darkgrid', palette='viridis', font='serif')
-df = get_theseus_data
+df = get_theseus_data()
 
 st.dataframe(df)
 
