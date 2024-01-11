@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates 
 import seaborn as sns
 import plotly.express as px
+from queries import *
 
 
 color_discrete_sequence=px.colors.sequential.Viridis
