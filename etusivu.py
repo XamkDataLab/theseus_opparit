@@ -12,6 +12,7 @@ st.set_page_config(layout="wide")
 sns.set_theme(style='darkgrid', palette='viridis', font='serif')
 df = get_theseus_data
 
+st.dataframe(df)
 
 def clean_data(df):
     df.replace('Karelia-ammattikorkeakoulu (Pohjois-Karjalan ammattikorkeakoulu)', 'Karelia-ammattikorkeakoulu', inplace=True)
