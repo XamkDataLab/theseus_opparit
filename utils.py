@@ -1,4 +1,8 @@
 import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates 
+import seaborn as sns
+import plotly.express as px
 
 def clean_data(df):
     df.replace('Karelia-ammattikorkeakoulu (Pohjois-Karjalan ammattikorkeakoulu)', 'Karelia-ammattikorkeakoulu', inplace=True)
