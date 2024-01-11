@@ -1,3 +1,5 @@
+import pandas as pd
+
 def clean_data(df):
     df.replace('Karelia-ammattikorkeakoulu (Pohjois-Karjalan ammattikorkeakoulu)', 'Karelia-ammattikorkeakoulu', inplace=True)
     return df
