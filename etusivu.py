@@ -19,29 +19,28 @@ def clean_data(df):
     return df
 
 
-def main():
-    clean_data(df)
-    page = st.sidebar.selectbox(
-        'Valitse sivu',
-        [
-            'Theseus aineisto',
-            'Opinnäytetöiden lukumäärän muutos',
-            '3',
-            '4'
-            ]
-    )
+clean_data(df)
+page = st.sidebar.selectbox(
+    'Valitse sivu',
+    [
+        'Theseus aineisto',
+        'Opinnäytetöiden lukumäärän muutos',
+        '3',
+        '4'
+        ]
+)
 
-    if page == 'Theseus aineisto':
-        st.header('Theseus aineiston analysointi')
-        st.markdown('Taulukko opinnäytetöistä')
-        st.dataframe(df)
-    elif page == 'Opinnäytetöiden lukumäärän muutos':
-        st.header('Opinnäytetöiden lukumäärän muutos vuosina 2008-')
-        plot_values()
-    elif page == '3':
-        3()
-    elif page == '4':
-        4()
+if page == 'Theseus aineisto':
+    st.header('Theseus aineiston analysointi')
+    st.markdown('Taulukko opinnäytetöistä')
+    st.dataframe(df)
+elif page == 'Opinnäytetöiden lukumäärän muutos':
+    st.header('Opinnäytetöiden lukumäärän muutos vuosina 2008-')
+    plot_values()
+elif page == '3':
+    3()
+elif page == '4':
+    4()
 
 
 # --- sivu 2----
@@ -245,6 +244,3 @@ def plot_values():
         yearly_sorted_data=filter_yearly(df)
         df_yearly_filtered = year_slider(yearly_sorted_data)
         plot_bar(df_yearly_filtered)
-  
-if __name__ == '__main__':
-    main()
