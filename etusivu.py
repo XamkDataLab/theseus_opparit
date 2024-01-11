@@ -37,15 +37,7 @@ if page == 'Theseus aineisto':
 elif page == 'Opinnäytetöiden lukumäärän muutos':
     st.header('Opinnäytetöiden lukumäärän muutos vuosina 2008-')
     plot_values()
-elif page == '3':
-    3()
-elif page == '4':
-    4()
 
-
-# --- sivu 2----
-        
-#--suodatus---
 
 def filter_monthly(df):
     # Järjestelee alkuperäisen taulukon kuukausittain tai ja laskee tapahtumat/kk.
