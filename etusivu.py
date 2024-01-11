@@ -10,7 +10,7 @@ from queries import *
 color_discrete_sequence=px.colors.sequential.Viridis
 st.set_page_config(layout="wide")
 sns.set_theme(style='darkgrid', palette='viridis', font='serif')
-df = pd.read_csv(r"...\Theseus_opinnäytetyöaineiston_analysointi2.csv")   
+df = get_theseus_data
 
 
 def clean_data(df):
