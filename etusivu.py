@@ -52,7 +52,7 @@ def plot_values():
         
 if page == 'Theseus aineisto':
     st.header('Theseus aineiston analysointi')
-    st.markdown('Tällä applikaatiolla voit visualisoida tietoja AMK-opinnäytetöistä. Kuvaajan valita tapahtuu vasemman sivun alasvetovalikosta. Aineisto on koottu Theseus.fi - ammattikorkeakoulujen opinnäytetyöt ja julkaisut verkossa -sivustolta. Tällä hetkellä aineistossa on opinnäytetyöt vuosilta 2008-06/2023. Aineisto ei sisällä YAMK-opinnäytetöitä.')
+    st.markdown('Tällä applikaatiolla voit visualisoida tietoja AMK-opinnäytetöistä. Kuvaajan valita tapahtuu vasemman sivun alasvetovalikosta. Aineisto on koottu Theseus.fi - ammattikorkeakoulujen opinnäytetyöt ja julkaisut verkossa -sivustolta. Tällä hetkellä aineistossa on opinnäytetyöt vuosilta 2008-2023. Aineisto ei sisällä YAMK-opinnäytetöitä.')
     st.markdown('Taulukko Theseus-opinnäytetöistä:')
     st.dataframe(df)
     
