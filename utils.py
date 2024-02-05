@@ -283,7 +283,7 @@ def plot_line_keywords(df_selected):
 
         if df_selected.empty:
             st.markdown('Tällä sivulla voit hakea AMK-opinnäytetöissä käytettyjä asiasanoja. Voit valita yhden tai useamman asiasanan samanaikaisesti. Asiasanan valinta tapahtuu alasvetovalikosta tai vaihtoehtoisesti voit kirjoittaa asiasanan alun alasvetovalikon kohtaan Choose an option. Applikaatio näyttää vain ne asiasanat, joiden kokonaismäärä on kaikkina vuosina yhteensä yli 5.')
-            st.markdown('Aineisto on koottu Theseus.fi - ammattikorkeakoulujen opinnäytetyöt ja julkaisut verkossa -sivustolta. Tällä hetkellä aineistossa on opinnäytetyöt vuosilta 2008-06/2023. Aineisto ei sisällä YAMK-opinnäytetöitä.')
+            st.markdown('Aineisto on koottu Theseus.fi - ammattikorkeakoulujen opinnäytetyöt ja julkaisut verkossa -sivustolta. Tällä hetkellä aineistossa on opinnäytetyöt vuosilta 2008-2023. Aineisto ei sisällä YAMK-opinnäytetöitä.')
             return 
 
         sns.lineplot(data=df_selected, x='vuosi', y='määrä', hue='asiasanat', 
