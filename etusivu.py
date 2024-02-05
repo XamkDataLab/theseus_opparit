@@ -60,7 +60,7 @@ elif page == 'Opinnäytetöiden lukumäärän muutos':
     plot_values()
     
 #elif page == 'Asiasanat':
-#        dff = filter_yearly(df2)
+#        dff = filter_yearly_keywords(df2)
 #        exploded_df = explode_keywords(dff)
 #        cleaned_df = clean_keywords(exploded_df)
 #        sorted_df = group_and_sort_keywords(cleaned_df)
