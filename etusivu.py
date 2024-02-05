@@ -9,8 +9,10 @@ st.set_page_config(layout="wide")
 sns.set_theme(style='darkgrid', palette='viridis', font='serif')
 
 df = get_theseus_data()
-df2 = get_theseus_data_keywords()
 clean_data(df)
+df2 = get_theseus_data_keywords()
+df2 = df2.rename(columns={'avainsanat': 'asiasanat'})
+
 
 page = st.sidebar.selectbox(
     'Valitse sivu',
