@@ -56,7 +56,7 @@ if page == 'Theseus aineisto':
     
 elif page == 'Opinnäytetöiden lukumäärän muutos':
     st.header('Opinnäytetöiden lukumäärän muutos vuosina 2008-')
-    st.markdown('Tällä sivulla voit hakea tietoa opinnäyteöistä oppilaitoksittain. Kuvaajan valinta tapahtuu alasvetovalikosta. Aineisto on koottu Theseus.fi - ammattikorkeakoulujen opinnäytetyöt ja julkaisut verkossa -sivustolta. Tällä hetkellä aineistossa on opinnäytetyöt vuosilta 2008-06/2023. Aineisto ei sisällä YAMK-opinnäytetöitä.')
+    st.markdown('Tällä sivulla voit hakea tietoa opinnäytetöistä oppilaitoksittain. Kuvaajan valinta tapahtuu alasvetovalikosta. Aineisto on koottu Theseus.fi - ammattikorkeakoulujen opinnäytetyöt ja julkaisut verkossa -sivustolta. Tällä hetkellä aineistossa on opinnäytetyöt vuosilta 2008-06/2023. Aineisto ei sisällä YAMK-opinnäytetöitä.')
     plot_values()
     
 #elif page == 'Asiasanat':
