@@ -9,7 +9,7 @@ st.set_page_config(layout="wide")
 sns.set_theme(style='darkgrid', palette='viridis', font='serif')
 
 df = get_theseus_data()
-df2 = get_theseus_data()
+#df2 = get_theseus_data()
 clean_data(df)
 
 page = st.sidebar.selectbox(
@@ -50,25 +50,23 @@ def plot_values():
         
 if page == 'Theseus aineisto':
     st.header('Theseus aineiston analysointi')
-    st.markdown('Tällä applikaatiolla voit visualisoida tietoja AMK-opinnäytetöistä. Kuvaajan valita tapahtuu vasemman sivun alasvetovalikosta.')
-    st.markdown('Aineisto on koottu Theseus.fi - ammattikorkeakoulujen opinnäytetyöt ja julkaisut verkossa -sivustolta. Tällä hetkellä aineistossa on opinnäytetyöt vuosilta 2008-06/2023. Aineisto ei sisällä YAMK-opinnäytetöitä.')
+    st.markdown('Tällä applikaatiolla voit visualisoida tietoja AMK-opinnäytetöistä. Kuvaajan valita tapahtuu vasemman sivun alasvetovalikosta. Aineisto on koottu Theseus.fi - ammattikorkeakoulujen opinnäytetyöt ja julkaisut verkossa -sivustolta. Tällä hetkellä aineistossa on opinnäytetyöt vuosilta 2008-06/2023. Aineisto ei sisällä YAMK-opinnäytetöitä.')
     st.markdown('Taulukko Theseus-opinnäytetöistä:')
     st.dataframe(df)
     
 elif page == 'Opinnäytetöiden lukumäärän muutos':
     st.header('Opinnäytetöiden lukumäärän muutos vuosina 2008-')
-    st.markdown('Tällä sivulla voit hakea tietoa opinnäyteöistä oppilaitoksittain. Kuvaajan valinta tapahtuu alasvetovalikosta')
-    st.markdown('Aineisto on koottu Theseus.fi - ammattikorkeakoulujen opinnäytetyöt ja julkaisut verkossa -sivustolta. Tällä hetkellä aineistossa on opinnäytetyöt vuosilta 2008-06/2023. Aineisto ei sisällä YAMK-opinnäytetöitä.')
+    st.markdown('Tällä sivulla voit hakea tietoa opinnäyteöistä oppilaitoksittain. Kuvaajan valinta tapahtuu alasvetovalikosta. Aineisto on koottu Theseus.fi - ammattikorkeakoulujen opinnäytetyöt ja julkaisut verkossa -sivustolta. Tällä hetkellä aineistossa on opinnäytetyöt vuosilta 2008-06/2023. Aineisto ei sisällä YAMK-opinnäytetöitä.')
     plot_values()
     
-elif page == 'Asiasanat':
-        dff = filter_yearly(df2)
-        exploded_df = explode_keywords(dff)
-        cleaned_df = clean_keywords(exploded_df)
-        sorted_df = group_and_sort_keywords(cleaned_df)
-        filtered_df = filter_keywords(sorted_df)
-        selected_keywords_data = select_keywords(filtered_df)
-        plot_line_keywords(selected_keywords_data)
+#elif page == 'Asiasanat':
+#        dff = filter_yearly(df2)
+#        exploded_df = explode_keywords(dff)
+#        cleaned_df = clean_keywords(exploded_df)
+#        sorted_df = group_and_sort_keywords(cleaned_df)
+#        filtered_df = filter_keywords(sorted_df)
+#        selected_keywords_data = select_keywords(filtered_df)
+#        plot_line_keywords(selected_keywords_data)
 
 
 
